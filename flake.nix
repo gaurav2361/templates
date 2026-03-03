@@ -124,24 +124,9 @@
             description = "C/C++ development environment";
           };
 
-          clojure = {
-            path = ./templates/clojure;
-            description = "Clojure development environment";
-          };
-
-          cue = {
-            path = ./templates/cue;
-            description = "Cue development environment";
-          };
-
           deno = {
             path = ./templates/deno;
             description = "Deno development environment";
-          };
-
-          dhall = {
-            path = ./templates/dhall;
-            description = "Dhall development environment";
           };
 
           elixir = {
@@ -174,16 +159,6 @@
             description = "HashiCorp DevOps tools development environment";
           };
 
-          haskell = {
-            path = ./templates/haskell;
-            description = "Haskell development environment";
-          };
-
-          haxe = {
-            path = ./templates/haxe;
-            description = "Haxe development environment";
-          };
-
           java = {
             path = ./templates/java;
             description = "Java development environment";
@@ -199,19 +174,9 @@
             description = "Kotlin development environment";
           };
 
-          latex = {
-            path = ./templates/latex;
-            description = "LaTeX development environment";
-          };
-
           lean4 = {
             path = ./templates/lean4;
             description = "Lean 4 development environment";
-          };
-
-          nickel = {
-            path = ./templates/nickel;
-            description = "Nickel development environment";
           };
 
           nim = {
@@ -229,19 +194,9 @@
             description = "Node.js development environment";
           };
 
-          ocaml = {
-            path = ./templates/ocaml;
-            description = "OCaml development environment";
-          };
-
           odin = {
             path = ./templates/odin;
             description = "Odin development environment";
-          };
-
-          opa = {
-            path = ./templates/opa;
-            description = "Open Policy Agent development environment";
           };
 
           php = {
@@ -254,34 +209,9 @@
             description = "PlatformIO development environment";
           };
 
-          protobuf = {
-            path = ./templates/protobuf;
-            description = "Protobuf development environment";
-          };
-
-          pulumi = {
-            path = ./templates/pulumi;
-            description = "Pulumi development environment";
-          };
-
-          purescript = {
-            path = ./templates/purescript;
-            description = "Purescript development environment";
-          };
-
           python = {
             path = ./templates/python;
             description = "Python development environment";
-          };
-
-          r = {
-            path = ./templates/r;
-            description = "R development environment";
-          };
-
-          ruby = {
-            path = ./templates/ruby;
-            description = "Ruby development environment";
           };
 
           rust = {
@@ -299,24 +229,9 @@
             description = "Shell script development environment";
           };
 
-          swi-prolog = {
-            path = ./templates/swi-prolog;
-            description = "Swi-prolog development environment";
-          };
-
           swift = {
             path = ./templates/swift;
             description = "Swift development environment";
-          };
-
-          typst = {
-            path = ./templates/typst;
-            description = "Typst development environment";
-          };
-
-          vlang = {
-            path = ./templates/vlang;
-            description = "Vlang developent environment";
           };
 
           zig = {
