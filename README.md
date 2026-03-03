@@ -5,17 +5,17 @@
 To initialize (where `${ENV}` is listed in the table below):
 
 ```shell
-nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#${ENV}"
+nix flake init --template "github:gaurav2361/templates#${ENV}"
 ```
 
 Here's an example (for the [`rust`](./rust) template):
 
 ```shell
 # Initialize in the current project
-nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#rust"
+nix flake init --template "github:gaurav2361/templates#rust"
 
 # Create a new project
-nix flake new --template "https://flakehub.com/f/the-nix-way/dev-templates/*#rust" ${NEW_PROJECT_DIRECTORY}
+nix flake new --template "github:gaurav2361/templates#rust" ${NEW_PROJECT_DIRECTORY}
 ```
 
 ## How to use the templates
@@ -31,44 +31,27 @@ Once your preferred template has been initialized, you can use the provided shel
 | :----------------------- | :---------------------------- |
 | [Bun]                    | [`bun`](./bun/)               |
 | [C] / [C++]              | [`c-cpp`](./c-cpp/)           |
-| [Clojure]                | [`clojure`](./clojure/)       |
-| [Cue]                    | [`cue`](./cue/)               |
 | [Deno]                   | [`deno`](./deno)              |
-| [Dhall]                  | [`dhall`](./dhall/)           |
 | [Elixir]                 | [`elixir`](./elixir/)         |
 | [Elm]                    | [`elm`](./elm/)               |
 | Empty (change at will)   | [`empty`](./empty)            |
 | [Gleam]                  | [`gleam`](./gleam/)           |
 | [Go]                     | [`go`](./go/)                 |
 | [Hashicorp] tools        | [`hashi`](./hashi/)           |
-| [Haskell]                | [`haskell`](./haskell/)       |
-| [Haxe]                   | [`haxe`](./haxe/)             |
 | [Java]                   | [`java`](./java/)             |
 | [Jupyter]                | [`jupyter`](./jupyter/)       |
 | [Kotlin]                 | [`kotlin`](./kotlin/)         |
-| [LaTeX]                  | [`latex`](./latex/)           |
-| [Nickel]                 | [`nickel`](./nickel/)         |
 | [Nim]                    | [`nim`](./nim/)               |
 | [Nix]                    | [`nix`](./nix/)               |
 | [Node.js][node]          | [`node`](./node/)             |
-| [OCaml]                  | [`ocaml`](./ocaml/)           |
 | [Odin]                   | [`odin`](./odin/)             |
-| [Open Policy Agent][opa] | [`opa`](./opa)                |
 | [PHP]                    | [`php`](./php/)               |
 | [PlatformIO]             | [`platformio`](./platformio/) |
-| [Protobuf]               | [`protobuf`](./protobuf/)     |
-| [Pulumi]                 | [`pulumi`](./pulumi/)         |
-| [Purescript]             | [`purescript`](./purescript/) |
 | [Python]                 | [`python`](./python/)         |
-| [R]                      | [`r`](./r/)                   |
-| [Ruby]                   | [`ruby`](./ruby/)             |
 | [Rust]                   | [`rust`](./rust/)             |
 | [Scala]                  | [`scala`](./scala/)           |
 | Shell                    | [`shell`](./shell/)           |
-| [SWI-prolog]             | [`swi-prolog`](./swi-prolog/) |
 | [Swift]                  | [`swift`](./swift)            |
-| [Typst]                  | [`typst`](./typst/)           |
-| [Vlang]                  | [`vlang`](./vlang/)           |
 | [Zig]                    | [`zig`](./zig/)               |
 
 ## Template contents
@@ -92,29 +75,6 @@ The sections below list what each template includes. In all cases, you're free t
 - [lcov]
 - [vcpkg]
 - [vcpkg-tool]
-
-### [`clojure`](./clojure/)
-
-- [Clojure]
-- [Boot]
-- [Leiningen]
-
-### [`cue`](./cue/)
-
-- [Cue]
-
-### [`dhall`](./dhall)
-
-- [Dhall]
-- [dhall-bash]
-- [dhall-docs]
-- [dhall-json]
-- [dhall-lsp-server]
-- [dhall-nix]
-- [dhall-nixpkgs]
-- [dhall-openapi]
-- [dhall-toml]
-- [dhall-yaml]
 
 ### [`elixir`](./elixir/)
 
@@ -153,15 +113,6 @@ A dev template that's fully customizable.
 - [Terragrunt]
 - [tflint]
 
-### [`haskell`](./haskell/)
-
-- [GHC][haskell]
-- [cabal]
-
-### [`haxe`](./haxe/)
-
-- [Haxe]
-
 ### [`java`](./java/)
 
 - [Java]
@@ -178,19 +129,9 @@ A dev template that's fully customizable.
 - [Kotlin]
 - [Gradle]
 
-### [`latex`](./latex/)
-
-- [texlive]
-- [tectonic]
-- [texlab]
-
 ### [`lean4`](./lean4/)
 
 - [Lean]
-
-### [`nickel`](./nickel/)
-
-- [Nickel]
 
 ### [`nim`](./nim)
 
@@ -215,21 +156,9 @@ A dev template that's fully customizable.
 - [Yarn]
 - [node2nix]
 
-### [`ocaml`](./ocaml/)
-
-- [OCaml]
-- [Dune]
-- [odoc]
-- [ocamlformat]
-
 ### [`odin`](./odin/)
 
 - [Odin]
-
-### [`opa`](./opa/)
-
-- [Open Policy Agent][opa]
-- [Conftest]
 
 ### [`php`](./php/)
 
@@ -240,40 +169,10 @@ A dev template that's fully customizable.
 
 - [PlatformIO]
 
-### [`protobuf`](./protobuf/)
-
-- The [Buf CLI][buf]
-- [protoc][protobuf]
-
-### [`pulumi`](./pulumi/)
-
-- [Pulumi]
-- [Python]
-- [Go]
-- [Node.js][node]
-- [dotnet]
-- [Java] and [Maven]
-- [jq]
-
-### [`purescript`](./purescript/)
-
-- [Purescript] (purs)
-- [Spago]
-
 ### [`python`](./python/)
 
 - [Python]
 - [pip]
-
-### [`r`](./r/)
-
-- [R]
-- [rmarkdown]
-- [knitr] ([pandoc] and [texlive])
-
-### [`ruby`](./ruby/)
-
-- [Ruby], plus the standard Ruby tools (`bundle`, `gem`, etc.)
 
 ### [`rust`](./rust/)
 
@@ -295,22 +194,10 @@ A dev template that's fully customizable.
 
 - [shellcheck]
 
-### [`swi-prolog`](./swi-prolog/)
-
-- [swipl][swi-prolog]
-
 ### [`swift`](./swift/)
 
 - [Swift]
 - [sourcekit-lsp]
-
-### [`typst`](./typst/)
-
-- [Typst]
-
-### [`vlang`](./vlang/)
-
-- [Vlang]
 
 ### [`zig`](./zig/)
 

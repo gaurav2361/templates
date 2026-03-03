@@ -28,7 +28,6 @@
     {
       overlays.default = final: prev: rec {
         nodejs = prev.nodejs;
-        yarn = (prev.yarn.override { inherit nodejs; });
       };
 
       devShells = forEachSupportedSystem (
@@ -36,10 +35,9 @@
         {
           default = pkgs.mkShellNoCC {
             packages = with pkgs; [
-              node2nix
               nodejs
               nodePackages.pnpm
-              yarn
+              biome
             ];
           };
         }

@@ -144,11 +144,6 @@
             description = "Empty dev template that you can customize at will";
           };
 
-          gleam = {
-            path = ./templates/gleam;
-            description = "Gleam development environment";
-          };
-
           go = {
             path = ./templates/go;
             description = "Go (Golang) development environment";
@@ -174,11 +169,6 @@
             description = "Kotlin development environment";
           };
 
-          lean4 = {
-            path = ./templates/lean4;
-            description = "Lean 4 development environment";
-          };
-
           nim = {
             path = ./templates/nim;
             description = "Nim development environment";
@@ -202,11 +192,6 @@
           php = {
             path = ./templates/php;
             description = "PHP development environment";
-          };
-
-          platformio = {
-            path = ./templates/platformio;
-            description = "PlatformIO development environment";
           };
 
           python = {
