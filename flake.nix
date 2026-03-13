@@ -169,6 +169,11 @@
             description = "Kotlin development environment";
           };
 
+          laravel = {
+            path = ./templates/laravel;
+            description = "Laravel development environment";
+          };
+
           nim = {
             path = ./templates/nim;
             description = "Nim development environment";
@@ -217,6 +222,11 @@
           swift = {
             path = ./templates/swift;
             description = "Swift development environment";
+          };
+
+          uv = {
+            path = ./templates/uv;
+            description = "Python (uv) development environment";
           };
 
           zig = {
