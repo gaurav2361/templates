@@ -53,15 +53,18 @@
         { pkgs }:
         {
           default = pkgs.mkShell {
-            packages = with pkgs; [
-              rustToolchain
-              openssl
-              pkg-config
-              cargo-deny
-              cargo-edit
-              cargo-watch
-              rust-analyzer
-            ];
+            packages =
+              with pkgs;
+              [
+                rustToolchain
+                openssl
+                pkg-config
+                rust-analyzer
+                bacon
+              ]
+              ++ lib.optionals stdenv.isDarwin [
+                libiconv
+              ];
 
             env = {
               # Required by rust-analyzer
